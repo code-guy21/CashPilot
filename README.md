@@ -6,6 +6,7 @@ CashFlow is a mobile app that automates personal finance management by splitting
 
 - [Features](#features)
 - [Tech Stack](#tech-stack)
+- [Usage](#usage)
 - [License](#license)
 - [Contact](#contact)
 
@@ -22,19 +23,18 @@ CashFlow is a mobile app that automates personal finance management by splitting
 ### Front-End
 
 - **React Native**: For building a cross-platform mobile application on iOS and Android.
-- **TypeScript**: For type safety and better developer experience.
+- **TypeScript**: For type safety and improved developer experience.
 - **Redux Toolkit**: For managing complex state such as user accounts, transaction history, and financial reports.
 - **React Navigation**: For managing navigation and routing within the app.
 - **D3.js** or **Recharts**: For creating interactive and insightful financial charts and visualizations.
 
 ### Back-End
 
-- **Node.js** with **TypeScript**: For server-side scripting and type safety.
-- **NestJS**: For structured and modular application architecture.
-- **GraphQL** with **Apollo Server**: For flexible and efficient data querying and real-time updates.
-- **PostgreSQL** with **TypeORM**: For relational data handling and complex queries.
+- **Go** with **Gin**: For high-performance server-side API and routing.
+- **PostgreSQL** with **GORM**: For relational data management, handling transactions, and complex queries.
 - **Plaid API**: For secure bank account linking and real-time transaction monitoring.
-
+- **Redis**: For caching frequent queries and improving the speed of real-time features like notifications.
+  
 ### API Integration
 
 - **Plaid API**: For securely connecting to users' bank accounts and tracking transactions.
@@ -46,23 +46,25 @@ CashFlow is a mobile app that automates personal finance management by splitting
 
 ### CI/CD and Deployment
 
-- **GitHub Actions**: For automated testing, building, and deployment.
-- **Docker**: For consistent environment setup and deployment.
+- **GitHub Actions**: For automated testing, building, and deployment pipelines.
+- **Docker**: For containerizing the backend services for consistency across environments.
 - **AWS**:
-  - **Elastic Beanstalk**: For backend deployment and auto-scaling.
+  - **Elastic Beanstalk**: For scalable deployment and auto-scaling of the backend.
   - **RDS (Relational Database Service)**: For managing the PostgreSQL database.
-  - **S3**: For secure storage of user-generated content if needed.
+  - **S3**: For secure storage of user-generated content, such as reports.
 
 ### Security
 
-- **AWS KMS** or **Vault**: For managing sensitive data and encryption keys.
-- **Helmet.js** and **Rate Limiting**: For securing the API endpoints against common attacks.
+- **AWS KMS** or **Vault**: For managing sensitive data encryption keys.
+- **Helmet** and **Rate Limiting**: For securing API endpoints against common attacks (e.g., SQL Injection, DDoS).
+- **OAuth 2.0**: For secure user authentication and social login integration (Google/Apple).
 
 ### Testing
 
-- **Jest**: For unit and integration testing of both backend and frontend.
-- **React Native Testing Library**: For testing mobile UI components.
-- **Cypress**: For end-to-end testing of user workflows.
+- **Jest**: For unit and integration testing on the front-end.
+- **Go Test Suite**: For testing the backend APIs.
+- **Cypress**: For end-to-end testing across user workflows.
+- **React Native Testing Library**: For front-end component testing.
 
 ## Usage
 
