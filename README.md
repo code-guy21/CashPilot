@@ -1,6 +1,6 @@
-# CashFlow
+# MoneyMap
 
-CashFlow is a mobile app that automates personal finance management by splitting users' paychecks into key categories such as debts, bills, savings, and investments. The app securely links to users' bank accounts via the Plaid API, tracks transactions in real-time, and allocates funds according to preset financial goals. CashFlow helps users manage cash flow, track bills, automate debt payments, and provides a clear financial overview through detailed reports and visualizations.
+MoneyMap is a mobile app that automates personal finance management by splitting users' paychecks into key categories such as debts, bills, savings, and investments. The app securely links to users' bank accounts via the Plaid API, tracks transactions in real-time, and allocates funds according to preset financial goals. CashFlow helps users manage cash flow, track bills, automate debt payments, and provides a clear financial overview through detailed reports and visualizations.
 
 ## Table of Contents
 
